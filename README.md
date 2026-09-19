@@ -1,3 +1,12 @@
+# Linnet Desktop 🐦
+
+**Linnet Desktop** is an in-development fork of **Budgie Desktop**, with the ultimate goal of being fully rewritten for **GTK4**. 
+
+> ⚠️ **Development Status:** This project is currently in its early transitional phase. The source code is being refactored from Budgie Desktop 10.10.2 to establish the new `linnet` namespace and prepare the codebase for the GTK4 architecture. 
+
+During this transition, some components, file names, and internal configurations may still reference the original `budgie` upstream codebase. We are actively working on rebranding and architectural changes for the upcoming Linnet 11 release.
+
+
 ![main_desktop](https://github.com/BuddiesOfBudgie/budgie-desktop/raw/main/.github/screenshots/MainDesktop.jpg)
 
 # Budgie Desktop
