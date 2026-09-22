@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE cambalache-project SYSTEM "cambalache-project.dtd">
+<!-- Created with Cambalache 1.0.3 -->
+<cambalache-project version="1.0.0" target_tk="gtk+-3.0">
+  <ui template-class="BudgieAgentDialog" filename="dialog.ui" sha256="506207f85f3af1b7e369b885f838d6facb01099c99aeb90ccd43945f7ca6222d"/>
+</cambalache-project>

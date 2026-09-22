@@ -107,13 +107,12 @@ namespace Budgie {
 		/* Save manually setting all this crap via some nice properties */
 		public AgentDialog(string action_id, string message, string icon_name, string cookie, Cancellable? cancellable) {
 			Object(action_id: action_id, message: message, auth_icon_name: icon_name, cookie: cookie, cancellable: cancellable, resizable: false);
+			
+
+			var header = new Gtk.HeaderBar();
+			this.set_titlebar(header);
 
 			set_keep_above(true);
-
-			var header = new Gtk.EventBox();
-			set_titlebar(header);
-			header.get_style_context().remove_class("titlebar");
-
 			// Try to get the ActionDescription for this event to give more
 			// context to the popup dialog
 			try {
@@ -149,11 +148,11 @@ namespace Budgie {
 			combobox_idents.add_attribute(render, "text", 0);
 			combobox_idents.set_id_column(0);
 
-			GtkLayerShell.init_for_window(this);
-			GtkLayerShell.set_layer(this, GtkLayerShell.Layer.TOP);
-			GtkLayerShell.set_anchor(this, GtkLayerShell.Edge.LEFT, false);
-			GtkLayerShell.set_anchor(this, GtkLayerShell.Edge.TOP, false);
-			GtkLayerShell.set_keyboard_mode(this, GtkLayerShell.KeyboardMode.ON_DEMAND);
+			//GtkLayerShell.init_for_window(this);
+			//GtkLayerShell.set_layer(this, GtkLayerShell.Layer.TOP);
+			//GtkLayerShell.set_anchor(this, GtkLayerShell.Edge.LEFT, false);
+			//GtkLayerShell.set_anchor(this, GtkLayerShell.Edge.TOP, false);
+			//GtkLayerShell.set_keyboard_mode(this, GtkLayerShell.KeyboardMode.ON_DEMAND);
 
 			if (wayland_client == null) {
 				wayland_client = new WaylandClient();
@@ -367,7 +366,7 @@ namespace Budgie {
 		private LibSession.SessionClient? sclient;
 
 		/* Theme management */
-		private Budgie.ThemeManager theme_manager;
+		//private Budgie.ThemeManager theme_manager;
 
 		public signal void stopagent();
 
@@ -400,7 +399,7 @@ namespace Budgie {
 		}
 
 		public Agent() {
-			theme_manager = new Budgie.ThemeManager();
+			//theme_manager = new Budgie.ThemeManager();
 
 			register_with_session.begin((o, res) => {
 				bool success = register_with_session.end(res);
