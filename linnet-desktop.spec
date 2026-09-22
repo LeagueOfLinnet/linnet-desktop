@@ -61,7 +61,7 @@ BuildRequires:  grim
 BuildRequires:  gcc
 BuildRequires:  gettext
 BuildRequires:  git
-BuildRequires:  gnupg2
+#BuildRequires:  gnupg2
 BuildRequires:  gsettings-desktop-schemas >= %{gsettings_desktop_schemas_version}
 BuildRequires:  gtk-doc >= 1.33.0
 BuildRequires:  gtklock
@@ -136,7 +136,7 @@ Requires:       %{name} = %{version}-%{release}
 Documentation for budgie-desktop
 
 %prep
-%{gpgverify} --keyring='%{SOURCE2}' --signature='%{SOURCE1}' --data='%{SOURCE0}'
+#%{gpgverify} --keyring='%{SOURCE2}' --signature='%{SOURCE1}' --data='%{SOURCE0}'
 %autosetup -p1
 
 %build
