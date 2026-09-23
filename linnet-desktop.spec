@@ -25,8 +25,7 @@ Summary:        A feature-rich, modern desktop designed to keep out the way of t
 # CC-BY-SA-4.0: All icons except those noted above
 License:        GPL-2.0-or-later AND GPL-2.0-only AND LGPL-2.1-or-later AND CC0-1.0 AND CC-BY-SA-4.0
 URL:            https://github.com/LeagueOfLinnet/linnet-desktop/
-Source0:        %{url}/releases/download/v%{version}/%{name}-v%{version}.tar.xz
-
+Source0:        %{url}/archive/refs/tags/%{version}.tar.xz
 
 Patch0:         0001-feat-build-add-opt-in-oo7-secret-service-support.patch
 
